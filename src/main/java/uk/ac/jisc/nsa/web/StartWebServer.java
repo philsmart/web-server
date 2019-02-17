@@ -9,7 +9,7 @@ public class StartWebServer {
     private static final Logger log = LoggerFactory.getLogger(StartWebServer.class);
 
     public static void main(final String args[]) {
-        final WebServer server = new MultiThreadedWebServer();
+        final WebServer server = new OneRequestWebServer();
         final int port = 8080;
         log.info("Starting web server on port {}", port);
         server.start(port);

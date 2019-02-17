@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * This server keeps the connection alive. It also blocks for 10 seconds. Requests are queue on the socket.
+ * This server spins up a thread to handle each connection. This is now a multithreaded environment.
  */
 public class MultiThreadedWebServer implements WebServer {
 
