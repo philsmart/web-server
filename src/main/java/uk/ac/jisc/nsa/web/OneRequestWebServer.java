@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Simple 'WebServer' that listens for incomming connections, prints out the request and sends a simple, static, HTTP
+ * Simple 'WebServer' that listens for incoming connections, prints out the request and sends a simple, static, HTTP
  * message response.
  */
 public class OneRequestWebServer implements WebServer {
