@@ -43,6 +43,17 @@ public class OneRequestWebServer implements WebServer {
 
             }
 
+            /*
+             * Below is a valid HTTP response. HTTP is a message in plain text that corresponds to a given protocol
+             * (format of how the text looks).
+             * <p>Consists of:</p>
+             * <ol>
+             * <li>A start line, Method, Target, Version
+             * <li>A set of HTTP headers. <HeaderName>:<value></li>
+             * <li>A newline</li>
+             * <li>the body of the message</li>
+             * <ol>
+             */
             out.write("HTTP/1.0 200 OK\r\n");
             out.write("Date: Fri, 31 Dec 1999 23:59:59 GMT\r\n");
             out.write("Server: Apache/0.8.4\r\n");
